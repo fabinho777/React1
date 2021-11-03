@@ -31,6 +31,8 @@ export const AreaHeader = styled.div`
             a{
                 text-decoration: none;
                 color: #fff;
+                display: flex;
+                align-items: center;
 
                 &:hover{
                     color: #F5BB00;

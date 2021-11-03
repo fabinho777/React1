@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState}  from 'react';
 import { Link } from 'react-router-dom'
 
 import { AreaHeader } from './styled';
+
+import HomeIcon from '@material-ui/icons/Home';
+import BuildIcon from '@material-ui/icons/Build';
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+
 function Header(){
     return (
         <AreaHeader>
@@ -9,12 +14,13 @@ function Header(){
             <div className="logo">
                <img src="../../../fb.png" />
             </div>
+            
 
             <nav>
                 <ul>
-                    <li><Link to="/">Inicio</Link></li>
-                    <li><Link to="/config">Configurações</Link></li>
-                    <li><Link to="/logout">Sair</Link></li>
+                    <li><Link to="/"> <HomeIcon />Inicio</Link></li>
+                    <li><Link to="/config"><BuildIcon />Configurações</Link></li>
+                    <li><Link to="/logout"><ExitToAppIcon />Sair</Link></li>
                 </ul>
             </nav>
 
